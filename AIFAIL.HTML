@@ -5,6 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI FAILS WITH HIGH ACCURACY</title>
     <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+      // Burger menus
+      document.addEventListener("DOMContentLoaded", function () {
+        // open
+        const burger = document.querySelectorAll(".navbar-burger");
+        const menu = document.querySelectorAll(".navbar-menu");
+
+        if (burger.length && menu.length) {
+          for (var i = 0; i < burger.length; i++) {
+            burger[i].addEventListener("click", function () {
+              for (var j = 0; j < menu.length; j++) {
+                menu[j].classList.toggle("hidden");
+              }
+            });
+          }
+        }
+
+        // close
+        const close = document.querySelectorAll(".navbar-close");
+        const backdrop = document.querySelectorAll(".navbar-backdrop");
+
+        if (close.length) {
+          for (var i = 0; i < close.length; i++) {
+            close[i].addEventListener("click", function () {
+              for (var j = 0; j < menu.length; j++) {
+                menu[j].classList.toggle("hidden");
+              }
+            });
+          }
+        }
+
+        if (backdrop.length) {
+          for (var i = 0; i < backdrop.length; i++) {
+            backdrop[i].addEventListener("click", function () {
+              for (var j = 0; j < menu.length; j++) {
+                menu[j].classList.toggle("hidden");
+              }
+            });
+          }
+        }
+      });
+    </script>
   </head>
   <body>
     <nav class="relative px-4 py-4 flex justify-between items-center bg-white">
@@ -131,7 +173,7 @@
               <p
                 class="text-sm md:text-base text-gray-600 dark:text-gray-400 text-center"
               >
-                If AI Fails the vetting process with
+                If AI passes the vetting process with
                 <strong>high accuracy</strong> but no document is available, it
                 will be marked as <strong>Failed</strong>. No organic search or
                 further evaluation in Co-Pilot is required.
@@ -293,5 +335,14 @@
   </div>
 </div>
     </div>
+    <br>
+    <div class="text-center">
+    <span class="block text-sm text-center text-gray-500">© 2026 <i>Team Neetu</i>™. All Rights Reserved.
+		Developed by
+        <div
+			class="text-purple-600 hover:underline">Mr. Mukund Singh</div>     
+      </div>
+	</span>
+</div>
   </body>
 </html>
